@@ -1,0 +1,21 @@
+<form [formGroup]="stockPricePredictionForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="stockName">Stock Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="stockName"
+      formControlName="stockName"
+    />
+  </div>
+  <div class="form-group">
+    <label for="tradeInterval">Trade Interval</label>
+    <input
+      type="text"
+      class="form-control"
+      id="tradeInterval"
+      formControlName="tradeInterval"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
